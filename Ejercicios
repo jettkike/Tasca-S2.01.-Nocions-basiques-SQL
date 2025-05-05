@@ -36,16 +36,16 @@ limit 1;
 SELECT *
 FROM transaction
 where company_id in (SELECT company.id
-						FROM company
-						WHERE country = 'Germany');
+		      FROM company
+		      WHERE country = 'Germany');
 
 
 -- 2) Llista les empreses que han realitzat transaccions per un amount superior a la mitjana de totes les transaccions.
 SELECT company_name
 FROM company
 WHERE company.id IN (SELECT company_id
-						from transaction
-						WHERE amount >(SELECT AVG(amount) FROM transaction));
+		      from transaction
+		      WHERE amount >(SELECT AVG(amount) FROM transaction));
 
 -- 3) Eliminaran del sistema les empreses que no tenen transaccions registrades, entrega el llistat d'aquestes empreses.
 
@@ -83,18 +83,18 @@ SELECT *
 FROM transaction
 JOIN company ON company.id = transaction.company_id 
 WHERE country LIKE (SELECT DISTINCT country
-					FROM company
-					WHERE company_name LIKE "Non Institute");
+		    FROM company
+		    WHERE company_name LIKE "Non Institute");
 
 
 -- Mostra el llistat aplicant solament subconsultes.
 SELECT *
 FROM transaction
 WHERE company_id IN (SELECT company.id
-					FROM company 
-					WHERE country LIKE (SELECT DISTINCT country
-										FROM company
-										WHERE company_name LIKE "Non Institute"));
+			FROM company 
+			WHERE country LIKE (SELECT DISTINCT country
+					     FROM company
+					     WHERE company_name LIKE "Non Institute"));
                                         
 
 -- Nivel 3
