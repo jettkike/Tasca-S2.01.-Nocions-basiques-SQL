@@ -7,7 +7,7 @@
 -- Mostra les característiques principals de l'esquema creat i explica les diferents taules i variables que existeixen.
 -- Assegura't d'incloure un diagrama que il·lustri la relació entre les diferents taules i variables. 
 
-![](https://github.com/jettkike/Tasca-S2.01.-Nocions-basiques-SQL/blob/main/Captura%20de%20pantalla%202025-05-05%20180226.png)
+![](https://github.com/jettkike/Tasca-S2.01.-Nocions-basiques-SQL/blob/main/diagrama%202025-05-05%20180226.png)
 
 Una vez importados los dos archivos en Workbench, se obtienen un schema llamado transactions, que a su vez contienen dos tablas:
 - transaction: la cual muestra los registros de las transacciones de la empresa con otras compañias que compran sus productos, se puede observar columnas como el id de la transaccion, el id de la tarjeta de crédito, id de la compañia que compra, un identificador de esa compañia, las coordenadas como latitud y longitud, fecha de la transaccion, el monto de la transaccion y una columna si la venta finalmente se hizo o no se llegó a concretar.
