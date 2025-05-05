@@ -14,7 +14,7 @@ Una vez importados los dos archivos en Workbench, se obtienen un schema llamado 
 - transaction: la cual muestra los registros de las transacciones de la empresa con otras compañias que compran sus productos, se puede observar columnas como el id de la transaccion, el id de la tarjeta de crédito, id de la compañia que compra, un identificador de esa compañia, las coordenadas como latitud y longitud, fecha de la transaccion, el monto de la transaccion y una columna si la venta finalmente se hizo o no se llegó a concretar.
 - company: esta tabla muestra los datos de las compañias que compran, desde el nombre de la compañia, telefono, email, pais de origen, y pagina web.
 
-la relacion es mediante los Primary Keys de cada tabla( en el grafico esta marcado como PK) y es una relacion de 1 a muchos ( desde company hacia transaction), es decir que una compañia puede tener muchas transacciones
+La relacion es mediante los Primary Keys de cada tabla( en el grafico esta marcado como PK) y es una relacion de 1 a muchos ( desde company hacia transaction), es decir que una compañia puede tener muchas transacciones
 
 -- Exercici 2
 -- Utilitzant JOIN realitzaràs les següents consultes:
