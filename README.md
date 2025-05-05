@@ -1,6 +1,5 @@
 # Tasca-S2.01.-Nocions-basiques-SQL
 
-
 -- Nivel 1
 
 -- Ejercicio 1
@@ -66,6 +65,7 @@ WHERE company.id in (SELECT company_id from transaction WHERE amount = 0);
 
 
 -- Nivell 2
+
 -- Exercici 1
 -- Identifica els cinc dies que es va generar la quantitat més gran d'ingressos a l'empresa per vendes. Mostra la data de cada transacció juntament amb el total de les vendes.
 
@@ -109,6 +109,7 @@ WHERE company_id IN (SELECT company.id
                                         
 
 -- Nivel 3
+
 -- Ejercicio 1
 -- Presenta el nombre, teléfono, país, fecha y amount, de aquellas empresas que realizaron transacciones con un valor comprendido entre 100 y 200 euros y
 -- en alguna de estas fechas: 29 de abril de 2021, 20 de julio de 2021 y 13 de marzo de 2022. Ordena los resultados de mayor a menor cantidad.
