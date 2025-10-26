@@ -1,1 +1,1 @@
-# Tasca-S2.01.-Nocions-basiques-SQL
+# Sprint-S2.01.-Nocions-basiques-SQL
